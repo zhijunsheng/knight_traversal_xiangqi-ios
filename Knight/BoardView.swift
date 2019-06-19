@@ -10,9 +10,6 @@ import UIKit
 
 class BoardView: UIView {
     
-    let cols: Int = 9
-    let rows: Int = 10
-    
     let originX: CGFloat = 27
     let originY: CGFloat = 43
     let cellSide: CGFloat = 29
@@ -27,16 +24,16 @@ class BoardView: UIView {
     
     private func drawGrid() {
         let path = UIBezierPath()
-        for i in 0..<rows {
+        for i in 0..<XiangqiBoard.rows {
             path.move(to: CGPoint(x: originX, y: originY + CGFloat(i) * cellSide))
-            path.addLine(to: CGPoint(x: originX + CGFloat(cols - 1) * cellSide, y: originY + CGFloat(i) * cellSide))
+            path.addLine(to: CGPoint(x: originX + CGFloat(XiangqiBoard.cols - 1) * cellSide, y: originY + CGFloat(i) * cellSide))
         }
-        for i in 0..<cols {
+        for i in 0..<XiangqiBoard.cols {
             path.move(to: CGPoint(x: originX + CGFloat(i) * cellSide, y: originY))
             path.addLine(to: CGPoint(x: originX + CGFloat(i) * cellSide, y: originY + 4 * cellSide))
             
             path.move(to: CGPoint(x: originX + CGFloat(i) * cellSide, y: originY + 5 * cellSide))
-            path.addLine(to: CGPoint(x: originX + CGFloat(i) * cellSide, y: originY + CGFloat(rows - 1) * cellSide))
+            path.addLine(to: CGPoint(x: originX + CGFloat(i) * cellSide, y: originY + CGFloat(XiangqiBoard.rows - 1) * cellSide))
         }
         
         for i in 0..<2 {

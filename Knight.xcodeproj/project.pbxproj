@@ -13,7 +13,19 @@
 		07DD9E6422BA001B00B6E3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD9E6322BA001B00B6E3FC /* Assets.xcassets */; };
 		07DD9E6722BA001B00B6E3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD9E6522BA001B00B6E3FC /* LaunchScreen.storyboard */; };
 		07DD9E6F22BA017800B6E3FC /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD9E6E22BA017800B6E3FC /* BoardView.swift */; };
+		07DD9E7122BA08FB00B6E3FC /* XiangqiBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD9E7022BA08FB00B6E3FC /* XiangqiBoard.swift */; };
+		07DD9E7922BA095C00B6E3FC /* XiangqiBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD9E7822BA095C00B6E3FC /* XiangqiBoardTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07DD9E7B22BA095C00B6E3FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DD9E5122BA001800B6E3FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DD9E5822BA001800B6E3FC;
+			remoteInfo = Knight;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07DD9E5922BA001800B6E3FC /* Knight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		07DD9E6622BA001B00B6E3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DD9E6822BA001B00B6E3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07DD9E6E22BA017800B6E3FC /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		07DD9E7022BA08FB00B6E3FC /* XiangqiBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiangqiBoard.swift; sourceTree = "<group>"; };
+		07DD9E7622BA095C00B6E3FC /* KnightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DD9E7822BA095C00B6E3FC /* XiangqiBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiangqiBoardTests.swift; sourceTree = "<group>"; };
+		07DD9E7A22BA095C00B6E3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		07DD9E5622BA001800B6E3FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DD9E7322BA095C00B6E3FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				07DD9E5B22BA001800B6E3FC /* Knight */,
+				07DD9E7722BA095C00B6E3FC /* KnightTests */,
 				07DD9E5A22BA001800B6E3FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				07DD9E5922BA001800B6E3FC /* Knight.app */,
+				07DD9E7622BA095C00B6E3FC /* KnightTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +84,22 @@
 				07DD9E5C22BA001800B6E3FC /* AppDelegate.swift */,
 				07DD9E5E22BA001800B6E3FC /* ViewController.swift */,
 				07DD9E6E22BA017800B6E3FC /* BoardView.swift */,
+				07DD9E7022BA08FB00B6E3FC /* XiangqiBoard.swift */,
 				07DD9E6022BA001900B6E3FC /* Main.storyboard */,
 				07DD9E6322BA001B00B6E3FC /* Assets.xcassets */,
 				07DD9E6522BA001B00B6E3FC /* LaunchScreen.storyboard */,
 				07DD9E6822BA001B00B6E3FC /* Info.plist */,
 			);
 			path = Knight;
+			sourceTree = "<group>";
+		};
+		07DD9E7722BA095C00B6E3FC /* KnightTests */ = {
+			isa = PBXGroup;
+			children = (
+				07DD9E7822BA095C00B6E3FC /* XiangqiBoardTests.swift */,
+				07DD9E7A22BA095C00B6E3FC /* Info.plist */,
+			);
+			path = KnightTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +122,24 @@
 			productReference = 07DD9E5922BA001800B6E3FC /* Knight.app */;
 			productType = "com.apple.product-type.application";
 		};
+		07DD9E7522BA095C00B6E3FC /* KnightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DD9E7D22BA095C00B6E3FC /* Build configuration list for PBXNativeTarget "KnightTests" */;
+			buildPhases = (
+				07DD9E7222BA095C00B6E3FC /* Sources */,
+				07DD9E7322BA095C00B6E3FC /* Frameworks */,
+				07DD9E7422BA095C00B6E3FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DD9E7C22BA095C00B6E3FC /* PBXTargetDependency */,
+			);
+			name = KnightTests;
+			productName = KnightTests;
+			productReference = 07DD9E7622BA095C00B6E3FC /* KnightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +152,10 @@
 				TargetAttributes = {
 					07DD9E5822BA001800B6E3FC = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					07DD9E7522BA095C00B6E3FC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 07DD9E5822BA001800B6E3FC;
 					};
 				};
 			};
@@ -116,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				07DD9E5822BA001800B6E3FC /* Knight */,
+				07DD9E7522BA095C00B6E3FC /* KnightTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07DD9E7422BA095C00B6E3FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +205,28 @@
 			files = (
 				07DD9E6F22BA017800B6E3FC /* BoardView.swift in Sources */,
 				07DD9E5F22BA001800B6E3FC /* ViewController.swift in Sources */,
+				07DD9E7122BA08FB00B6E3FC /* XiangqiBoard.swift in Sources */,
 				07DD9E5D22BA001800B6E3FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07DD9E7222BA095C00B6E3FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DD9E7922BA095C00B6E3FC /* XiangqiBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07DD9E7C22BA095C00B6E3FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DD9E5822BA001800B6E3FC /* Knight */;
+			targetProxy = 07DD9E7B22BA095C00B6E3FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		07DD9E6022BA001900B6E3FC /* Main.storyboard */ = {
@@ -318,6 +400,46 @@
 			};
 			name = Release;
 		};
+		07DD9E7E22BA095C00B6E3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8B74FCZCC;
+				INFOPLIST_FILE = KnightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.KnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knight.app/Knight";
+			};
+			name = Debug;
+		};
+		07DD9E7F22BA095C00B6E3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8B74FCZCC;
+				INFOPLIST_FILE = KnightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.KnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knight.app/Knight";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +457,15 @@
 			buildConfigurations = (
 				07DD9E6C22BA001B00B6E3FC /* Debug */,
 				07DD9E6D22BA001B00B6E3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DD9E7D22BA095C00B6E3FC /* Build configuration list for PBXNativeTarget "KnightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DD9E7E22BA095C00B6E3FC /* Debug */,
+				07DD9E7F22BA095C00B6E3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
